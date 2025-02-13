@@ -12,6 +12,26 @@ html {
 }
 
 .page1 {
+  background: linear-gradient(to top right, #0027c0, #723289 70%, #0027c0);
+}
+.cursor1 {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  transition: transform linear;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: background-image ease 0.1s;
+  object-fit: cover;
+}
+
+/*page1*/
+
+.page1 {
   height: 100%;
   width: 100%;
 }
@@ -260,256 +280,126 @@ html {
 .typewriter.nocaret::after {
   border-right: 0;
 }
+/*nav bar*/
 
-/*page4*/
-@layer reset, base, utilities, components, layout, overrides;
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+.container {
+  padding: 20px;
 }
 
-@property --direction {
-  syntax: "<number>";
-  initial-value: 1;
-  inherits: true;
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  list-style: none;
+  width: fit-content;
 }
 
-@layer reset {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
-
-  :where(:not(dialog)) {
-    margin: 0;
-  }
-
-  :where(html) {
-    -webkit-text-size-adjust: none;
-
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-  }
-
-  :where(body) {
-    min-block-size: 100svb;
-    -webkit-font-smoothing: antialiased;
-  }
+.tab {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: white;
 }
 
-@layer base {
-  html {
-    --surface-1: oklch(20% 0.03 269);
-    --surface-2: oklch(26% 0.04 269);
-    --text-1: oklch(91% 0.03 61);
-    --body: 400 1rem/1.5rem system-ui, sans-serif;
-    --display: 400 3.562rem/4rem system-ui, sans-serif;
-    --display-small: 400 2.25rem/2.75rem system-ui, sans-serif;
-    --label: 500 0.875rem/1.25rem system-ui, sans-serif;
-    --title: 400 1.375rem/1.75rem system-ui, sans-serif;
-    color-scheme: dark;
-  }
+.cursor {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  height: 55px;
+  background: black;
+  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 1;
+}
+.RegisterNowButton {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: url("https://i.pinimg.com/originals/65/98/31/6598313112d22526d2931969c8cf57d8.gif");
+  background-position: top;
 
-  body {
-    background-color: var(--surface-1);
-    color: var(--text-1);
-    font: var(--body);
-  }
+  color: ghostwhite;
 }
 
-@layer layout {
-  .section {
-    display: grid;
-    max-inline-size: 100%;
-    min-block-size: 100svb;
-    overflow-x: clip;
-    padding-block: 80px;
-    place-items: center;
-  }
+.RegisterNowButton span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
 
-  .section-wrapper {
-    display: grid;
-    place-items: center;
-  }
+.RegisterNowButton:hover span {
+  color: black;
+}
 
-  .header {
-    display: grid;
-    place-items: center;
-    gap: 16px;
-    z-index: 2;
+.RegisterNowButton::before,
+.RegisterNowButton::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
-    @media (width >=1024px) {
-      grid-area: 1/1;
-    }
-  }
+.RegisterNowButton::before {
+  content: "";
+  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
 
-  .hgroup {
-    display: grid;
-    place-items: center;
-    gap: 8px;
-  }
+.RegisterNowButton:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
 
-  .headline {
-    font: var(--display-small);
+/*page2 */
+.page2Div {
+  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+}
 
-    @media (width >=1200px) {
-      font: var(--display);
-    }
-  }
+.page1Heading {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+  background-position: top;
+  font-weight: bolder;
+}
 
-  .section-link {
-    color: var(--text-1);
-    text-decoration: underline;
-    font: var(--label);
+/*pae 4*/
+.page4heading {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: arial;
+  background-image: url("https://i.pinimg.com/originals/ab/38/f7/ab38f7ff5ee625e4c97e81f496c40b9a.gif");
+  background-position: center;
+  background-size: contain;
+}
 
-    @media (width < 1024px) {
-      display: none;
-    }
-  }
-
-  .cards {
-    list-style: none;
-    padding: 0;
-
-    @media (width < 1024px) {
-      display: grid;
-      grid-auto-flow: column;
-      gap: 32px;
-      max-inline-size: 100%;
-      overflow-x: scroll;
-      padding-block: 32px;
-      padding-inline: 32px;
-    }
-
-    @media (width >=1024px) {
-      --avatar-opacity: 1;
-      --avatar-img-scale: 1;
-      --tooltip-visibility: hidden;
-      --tooltip-opacity: 0;
-      --animation-state: running;
-
-      display: grid;
-      grid-area: 1/1;
-      min-block-size: 700px;
-      place-items: center;
-
-      &:has(.avatar-link-wrapper:is(:hover, :focus-visible, :active)) {
-        --animation-state: paused;
-        --avatar-opacity: 0.4;
-      }
-    }
-  }
-
-  .card {
-    padding: 0;
-
-    @media (width >=1024px) {
-      --radius: min(620px, 40cqi);
-      --offset-per-child: calc(360deg / (var(--nth-siblings) + 1));
-      --angle-offset: calc(var(--nth-child) * var(--offset-per-child));
-      --inline-ratio: 1/1;
-      --block-ratio: 1/2;
-
-      --direction: min(
-        max(calc(cos((var(--angle) + var(--angle-offset))) * -100), -1),
-        1
-      );
-
-      grid-area: 1/1;
-
-      translate: calc(
-          cos((var(--angle) + var(--angle-offset))) * var(--radius) *
-            var(--inline-ratio)
-        )
-        calc(
-          sin((var(--angle) + var(--angle-offset))) * var(--radius) *
-            var(--block-ratio) * -1
-        );
-
-      animation: adjust-angle linear 40s infinite reverse var(--animation-state);
-    }
-  }
-
-  @keyframes adjust-angle {
-    to {
-      --angle: 360deg;
-    }
-  }
-
-  .avatar-link-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: var(--text-1);
-
-    &:is(:hover, :focus-visible, :active) {
-      --avatar-img-scale: 1.1;
-      --avatar-opacity: 1;
-      --tooltip-opacity: 1;
-      --tooltip-visibility: visible;
-    }
-
-    @media (width < 1024px) {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-
-  .visual {
-    aspect-ratio: 1;
-    border-radius: 1rem;
-    box-shadow: 0 2px 4px 0 oklch(0 0 0 / 10%);
-    inline-size: 240px;
-    opacity: var(--avatar-opacity);
-    overflow: clip;
-    transition: opacity 0.3s ease;
-
-    @media (width >=1024px) {
-      inline-size: 144px;
-      border-radius: 1e5px;
-    }
-  }
-
-  .avatar-img {
-    background-color: var(--surface-2);
-    block-size: 100%;
-    display: block;
-    inline-size: 100%;
-    object-fit: cover;
-    scale: var(--avatar-img-scale, 1);
-    transition: scale 0.3s ease;
-  }
-
-  .tooltiptext {
-    display: grid;
-    gap: 4px;
-
-    @media (width >=1024px) {
-      position: absolute;
-      max-inline-size: 20ch;
-      opacity: var(--tooltip-opacity);
-      transition-duration: 0.3s;
-      transition-property: opacity, visibility;
-      transition-timing-function: ease;
-      translate: 110% 0;
-      visibility: var(--tooltip-visibility);
-
-      pointer-events: none;
-      user-select: none;
-
-      @container style(--direction: 1) {
-        text-align: end;
-        translate: -110% 0;
-      }
-    }
-  }
-
-  .team-name {
-    font: var(--title);
-  }
+.domains {
+  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+  background-position: top;
+  font-weight: bolder;
 }
