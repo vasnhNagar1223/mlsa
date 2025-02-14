@@ -36,9 +36,6 @@ gsap.from(".page2Div", {
     scrub: 2,
   },
 });
-gsap.from(".page2Boxes", {
-  y: 100,
-});
 
 gsap.to(".page1scaleInc", {
   scale: 1.2,
@@ -101,11 +98,23 @@ document.addEventListener("DOMContentLoaded", function () {
   swiper.initialize();
 });
 
-document.querySelectorAll(".swiper-lazy").forEach((img) => {
-  img.addEventListener("load", () => {
-    img
-      .closest("swiper-slide")
-      .querySelector(".swiper-lazy-preloader")
-      .remove();
+const PROJECTS = document.querySelectorAll(".PROJECTS");
+const cursor1 = document.querySelector(".cursor1");
+PROJECTS.forEach((element) => {
+  const image = element.getAttribute("data-image");
+  element.addEventListener("mouseenter", () => {
+    cursor1.style.height = "40px";
+    cursor1.style.width = "40px";
+    cursor1.style.borderRadius = "0";
+    cursor1.style.backgroundImage = `url(${image})`;
+    cursor1.style.mixBlendMode = "normal";
+    cursor1.style.backgroundImage;
+  });
+  element.addEventListener("mouseleave", () => {
+    cursor1.style.height = "30px";
+    cursor1.style.width = "30px";
+    cursor1.style.borderRadius = "50%";
+    cursor1.style.backgroundImage = ``;
+    cursor1.style.mixBlendMode = "difference";
   });
 });

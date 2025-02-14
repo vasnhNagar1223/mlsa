@@ -337,8 +337,7 @@ html {
   border-radius: 15px;
   overflow: hidden;
   background-image: url("https://i.pinimg.com/originals/65/98/31/6598313112d22526d2931969c8cf57d8.gif");
-  background-position: top;
-
+  background-position: right;
   color: ghostwhite;
 }
 
@@ -365,6 +364,8 @@ html {
 .RegisterNowButton::before {
   content: "";
   background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
+  background-position: center;
+
   width: 120%;
   left: -10%;
   transform: skew(30deg);
