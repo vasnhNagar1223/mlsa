@@ -389,14 +389,6 @@ html {
 }
 
 /*pae 4*/
-.page4heading {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: arial;
-  background-image: url("https://i.pinimg.com/originals/ab/38/f7/ab38f7ff5ee625e4c97e81f496c40b9a.gif");
-  background-position: center;
-  background-size: contain;
-}
 
 .domains {
   background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");

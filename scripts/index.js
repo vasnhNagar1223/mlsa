@@ -1,3 +1,12 @@
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 const cursor = document.querySelector(".cursor1");
 
 document.addEventListener("mousemove", (event) => {
@@ -60,14 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// shery
 Shery.mouseFollower({
-  //Parameters are optional.
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
-Shery.textAnimate(".text-target" /* Element to target.*/, {
-  //Parameters are optional.
+Shery.textAnimate(".text-target", {
   style: 2,
   y: 10,
   duration: 1,
@@ -75,8 +81,7 @@ Shery.textAnimate(".text-target" /* Element to target.*/, {
   multiplier: 0.1,
 });
 
-Shery.makeMagnet(".magnet-target" /* Element to target.*/, {
-  //Parameters are optional.
+Shery.makeMagnet(".magnet-target", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
@@ -87,11 +92,20 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.assign(swiper, {
     slidesPerView: 3,
     breakpoints: {
-      768: { slidesPerView: 3 }, // For tablets and larger screens
-      480: { slidesPerView: 2 }, // For small tablets
-      0: { slidesPerView: 1 }, // For mobile screens
+      768: { slidesPerView: 3 },
+      480: { slidesPerView: 2 },
+      0: { slidesPerView: 1 },
     },
   });
 
   swiper.initialize();
+});
+
+document.querySelectorAll(".swiper-lazy").forEach((img) => {
+  img.addEventListener("load", () => {
+    img
+      .closest("swiper-slide")
+      .querySelector(".swiper-lazy-preloader")
+      .remove();
+  });
 });
