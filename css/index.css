@@ -29,6 +29,23 @@ html {
   object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .cursor1 {
+    height: 0px;
+    width: 0px;
+  }
+  .navSideBar {
+    display: none;
+  }
+}
+.navSideBar {
+  display: none;
+}
+
+.navSideBar {
+  display: none;
+}
+
 /*page1*/
 
 .page1 {

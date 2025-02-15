@@ -118,3 +118,24 @@ PROJECTS.forEach((element) => {
     cursor1.style.mixBlendMode = "difference";
   });
 });
+
+handleCloseButtonclick = () => {
+  const button = document.querySelector(".navSideBar");
+  button.style.display = "none";
+  const sidebarButton = document.querySelector(".ri-menu-line");
+  sidebarButton.style.display = "initial";
+};
+
+handlesidebarButton = () => {
+  const button = document.querySelector(".navSideBar");
+  button.style.display = "initial";
+  const sidebarButton = document.querySelector(".ri-menu-line");
+  sidebarButton.style.display = "none";
+};
+
+if (window.innerWidth > 600) {
+  Shery.mouseFollower({
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+}

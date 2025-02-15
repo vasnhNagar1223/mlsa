@@ -52,7 +52,7 @@
           <ul class="tabs" id="tabs">
             <li class="tab magnet-target"><a href="event.html">Events</a></li>
             <li class="tab magnet-target"><a href="projects.html">Projects</a></li>
-            <li class="tab magnet-target"><a href="blog.html">Blog</a></li>
+            <li class="tab magnet-target"><a href="https://mlsabitjaipur.substack.com/">Blog</a></li>
             <li class="tab magnet-target"><a href="gallery.html">Gallery</a></li>
             <li class="tab magnet-target"><a href="index.html">Home</a></li>
             <li class="tab magnet-target"><a href="member.html">Members</a></li>
@@ -63,7 +63,59 @@
         </div>
 
         <button class="RegisterNowButton"><span>Register Now </span></button>
+        <i
+          onclick="handlesidebarButton()"
+          class="ri-menu-line sm:hidden text-[8vw] m-[3vw]"
+        ></i>
+
+
+   
       </nav>
+
+
+      <div
+        class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
+      >
+        <i
+          onclick="handleCloseButtonclick()"
+          class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+        ></i>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="index.html"
+          ><div>Home</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="event.html"
+          class="navLink"
+          ><div>Events</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="https://mlsabitjaipur.substack.com/"
+        >
+          <div>Blog</div>
+        </a>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="gallery.html"
+          ><div>Gallery</div></a
+        >
+
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="projects.html"
+        >
+          <div>Projects</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="member.html"
+        >
+          <div>Members</div>
+        </a>
+      </div>
       <div class="content flex justify-center items-center flex-col relative">
         <div
           class="text-white font-bold text-[28vw] absolute mix-blend-difference"

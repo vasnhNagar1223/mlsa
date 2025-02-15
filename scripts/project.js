@@ -14,7 +14,6 @@ gsap.from(".PROJECT-CONTAINER div", {
 gsap.to(".PROJECT-CONTAINER div", {
   scrollTrigger: {
     trigger: ".page1",
-    markers: true,
     pin: true,
     scrub: 2,
   },
@@ -27,3 +26,10 @@ gsap.from(".page1Projects", {
     scrub: 2,
   },
 });
+
+if (window.innerWidth > 600) {
+  Shery.mouseFollower({
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+}

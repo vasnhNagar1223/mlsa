@@ -25,3 +25,9 @@ swiper-slide img {
 .page4heading {
   font-family: "Arial";
 }
+
+@media (max-width: 600px) {
+  .cursor1 {
+    display: none;
+  }
+}

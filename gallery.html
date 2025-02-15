@@ -29,6 +29,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-black cursor-none">
     <div class="cursor1"></div>
@@ -51,28 +57,84 @@
         >
           <ul class="tabs" id="tabs">
             <li class="tab magnet-target"><a href="event.html">Events</a></li>
-            <li class="tab magnet-target"><a href="projects.html">Projects</a></li>
-            <li class="tab magnet-target"><a href="blog.html">Blog</a></li>
-            <li class="tab magnet-target"><a href="gallery.html">Gallery</a></li>
+            <li class="tab magnet-target">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="https://mlsabitjaipur.substack.com/">Blog</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="gallery.html">Gallery</a>
+            </li>
             <li class="tab magnet-target"><a href="index.html">Home</a></li>
             <li class="tab magnet-target"><a href="member.html">Members</a></li>
-
 
             <div class="cursor" id="cursor"></div>
           </ul>
         </div>
 
         <button class="RegisterNowButton"><span>Register Now </span></button>
+        <i
+          onclick="handlesidebarButton()"
+          class="ri-menu-line sm:hidden text-[8vw] m-[3vw]"
+        ></i>
       </nav>
+
+      <div
+        class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
+      >
+        <i
+          onclick="handleCloseButtonclick()"
+          class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+        ></i>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="index.html"
+          ><div>Home</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="event.html"
+          class="navLink"
+          ><div>Events</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="https://mlsabitjaipur.substack.com/"
+        >
+          <div>Blog</div>
+        </a>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="gallery.html"
+          ><div>Gallery</div></a
+        >
+
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="projects.html"
+        >
+          <div>Projects</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="member.html"
+        >
+          <div>Members</div>
+        </a>
+      </div>
+
       <div class="content flex justify-center items-center flex-col relative">
         <div
-          class="text-white font-bold text-[28vw] absolute mix-blend-difference"
+          class="text-white font-bold text-[26vw] absolute mix-blend-difference"
         >
-          Gallery
+          GALLERY
         </div>
-        
+        <div
+          class="text-white text-[5vw] font1 page1comingsoon mix-blend-difference"
+        >
+          orientation session 2k25
         </div>
-        <div></div>
       </div>
 
       <div class="area">
@@ -90,7 +152,47 @@
         </ul>
       </div>
     </div>
-    <div class="page2 p-4 sm:p-[4vw] overflow-hidden">
+
+    <div class="page2imagecontainer overflow-hidden w-full bg-Blakish">
+      <div class="list p-[2vw]">
+        <img
+          src="./Public/gallery/183cd00c-6355-410a-89c1-a854e349ee51.jpg"
+          alt=""
+        />
+        <img
+          src="./Public/gallery/5feb597d-6002-4ef1-ac0d-8a67014b6125.jpg"
+          alt=""
+        />
+        <img
+          src="./Public/gallery/064f267b-d2e8-4898-81b5-41454cbe9705.jpg"
+          alt=""
+        />
+
+        <img
+          src="./Public/gallery/a80b3b36-b57e-4306-a861-fa12e4fd4b5e.jpg"
+          alt=""
+        />
+
+        <img
+          src="./Public/gallery/a42b5099-540e-46c8-b7cf-6a9bfc6bcd52.jpg"
+          alt=""
+        />
+        <img
+          src="./Public/gallery/8220d2da-b211-4d67-b25c-567216d1b9f3.jpg"
+          alt=""
+        />
+        <img
+          src="./Public/gallery/91f08cfd-14f0-4c21-9d37-95a8379272d6.jpg"
+          alt=""
+        />
+        <img
+          src="./Public/gallery/f708be83-5b50-4ab1-bccc-57d75338f161.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="page2 p-4 sm:p-[4vw] overflow-hidden border-t sm:m-[1vw]">
       <div class="flex flex-col sm:flex-row justify-between gap-8 sm:gap-0">
         <div class="w-full sm:w-[25vw] text-white text-center sm:text-left">
           <div class="text-sm sm:text-base text-justify">

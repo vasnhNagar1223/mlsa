@@ -10,6 +10,21 @@ html {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .cursor1 {
+    display: none;
+  }
+  .navSideBar {
+    display: none;
+  }
+}
+.navSideBar {
+  display: none;
+}
+
+.navSideBar {
+  display: none;
+}
 
 .cursor1 {
   height: 30px;
