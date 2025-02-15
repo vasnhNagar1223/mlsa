@@ -278,6 +278,9 @@ body {
   .navSideBar {
     display: none;
   }
+  .list {
+    columns: 40vw;
+  }
 }
 .navSideBar {
   display: none;
