@@ -26,10 +26,6 @@ html {
   object-fit: cover;
 }
 
-/* .page1 {
-  background: linear-gradient(to top right, #0027c0, #723289 70%, #0027c0);
-} */
-
 .container {
   padding: 20px;
 }
@@ -239,3 +235,58 @@ html {
 }
 
 /*footer*/
+
+.banner {
+  position: relative;
+}
+.banner #dotsCanvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+body {
+  color: #eee;
+  font-family: Poppins;
+  margin: 0;
+  background-image: repeating-linear-gradient(
+      to right,
+      #2d2a44 0 1px,
+      transparent 2px 200px
+    ),
+    repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
+    radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
+}
+
+.Barrio {
+  font-family: "Barrio";
+}
+
+/*infinite scroller */
+
+.text-marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.text-single {
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  will-change: transform;
+}
+
+.text {
+  padding: 0;
+  font-size: 6.4rem;
+  display: inline-block;
+  margin-right: 2rem;
+  font-family: arial;
+  font-weight: bold;
+}
