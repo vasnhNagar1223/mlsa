@@ -252,7 +252,7 @@ profiles.forEach((profile) => {
     <img src="${profile.img}" alt="${
     profile.name
   }" loading="lazy" class="PROJECTS swiper-lazy" />
-    <div class="absolute bottom-0 right-0 left-0 z-50 h-[7vw] max-sm:h-[30vw] flex justify-center items-center gap-7">
+    <div class="absolute bottom-0 right-0 left-0 z-50 h-[7vw] max-sm:h-[30vw] flex justify-center items-center gap-0">
       ${
         profile.instagram
           ? `<a href="${profile.instagram}" target="_blank"><i class="ri-instagram-line text-[3vw] text-white max-sm:text-[15vw]"></i></a>`
@@ -272,3 +272,5 @@ profiles.forEach((profile) => {
   `;
   swiperContainer.appendChild(slide);
 });
+
+console.log("made by vansh nagar");

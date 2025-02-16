@@ -11,9 +11,19 @@ html {
   width: 100%;
 }
 
-.page1 {
-  background: linear-gradient(to top right, #0027c0, #723289 70%, #0027c0);
+body {
+  color: #eee;
+  font-family: Poppins;
+  margin: 0;
+  background-image: repeating-linear-gradient(
+      to right,
+      #2d2a44 0 1px,
+      transparent 2px 200px
+    ),
+    repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
+    radial-gradient(at 50% 50%, #3d2bcc, #311b34);
 }
+
 .cursor1 {
   height: 30px;
   width: 30px;

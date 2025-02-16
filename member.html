@@ -39,25 +39,30 @@
       <nav
         class="navBar fixed z-50 top-0 right-0 left-0 w-full h-[100px] backdrop-blur-md flex justify-between items-center p-[2vw]"
       >
-      <div class="text-white max-sm:hidden">
-        <a href="index.html">
-          <img
-            src="./Public/1_fMCdGCokXoh8CECCD7j9Og.png"
-            class="w-[8vw]"
-            alt=""
-        /></a>
-      </div>
+        <div class="text-white max-sm:hidden">
+          <a href="index.html">
+            <img
+              src="./Public/1_fMCdGCokXoh8CECCD7j9Og.png"
+              class="w-[8vw]"
+              alt=""
+          /></a>
+        </div>
         <div
           class="container flex justify-center items-center gap-[4vw] -mr-[3vw] max-sm:hidden"
         >
           <ul class="tabs" id="tabs">
             <li class="tab magnet-target"><a href="event.html">Events</a></li>
-            <li class="tab magnet-target"><a href="projects.html">Projects</a></li>
-            <li class="tab magnet-target"><a href="https://mlsabitjaipur.substack.com/">Blog</a></li>
-            <li class="tab magnet-target"><a href="gallery.html">Gallery</a></li>
+            <li class="tab magnet-target">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="https://mlsabitjaipur.substack.com/">Blog</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="gallery.html">Gallery</a>
+            </li>
             <li class="tab magnet-target"><a href="index.html">Home</a></li>
             <li class="tab magnet-target"><a href="member.html">Members</a></li>
-
 
             <div class="cursor" id="cursor"></div>
           </ul>
@@ -68,11 +73,7 @@
           onclick="handlesidebarButton()"
           class="ri-menu-line sm:hidden text-[8vw] m-[3vw]"
         ></i>
-
-
-   
       </nav>
-
 
       <div
         class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
@@ -117,16 +118,6 @@
           <div>Members</div>
         </a>
       </div>
-      <div class="content flex justify-center items-center flex-col relative">
-        <div
-          class="text-white font-bold text-[28vw] absolute mix-blend-difference"
-        >
-          Member
-        </div>
-        
-        </div>
-        <div></div>
-      </div>
 
       <div class="area">
         <ul class="circles">
@@ -142,11 +133,34 @@
           <li></li>
         </ul>
       </div>
+      <div class="content flex justify-center items-center flex-col relative">
+        <div
+          class="text-white font-bold text-[28vw] absolute mix-blend-difference"
+        >
+          Member
+        </div>
+        
+        </div>
+        <div></div>
+      </div>
     </div>
-    <div class="page2 p-4 sm:p-[4vw] overflow-hidden">
+
+    <swiper-container
+      class="mySwiper page4"
+      pagination="true"
+      pagination-clickable="true"
+      space-between="30"
+      slides-per-view="3"
+      loop="true"
+      autoplay="true"
+      lazy="true"
+    >
+    </swiper-container>
+
+    <div class="page2 p-4 sm:p-[4vw] overflow-hidden border-t sm:m-[1vw]">
       <div class="flex flex-col sm:flex-row justify-between gap-8 sm:gap-0">
         <div class="w-full sm:w-[25vw] text-white text-center sm:text-left">
-          <div class="text-sm sm:text-base text-justify">
+          <div class="text-sm sm:text-base text-center">
             WE ENCOURAGE YOUNG MINDS TO PURSUE KNOWLEDGE AND EXCELLENCE IN
             UNIQUE WAYS
           </div>
@@ -207,7 +221,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-    <script src="./scripts/index.js"></script>
     <script src="./scripts/member.js"></script>
   </body>
 </html>

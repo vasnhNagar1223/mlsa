@@ -4,3 +4,5 @@ if (window.innerWidth > 600) {
     duration: 1,
   });
 }
+
+console.log("made by vansh nagar 8824458774");
