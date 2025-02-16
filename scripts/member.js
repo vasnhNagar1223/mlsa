@@ -14,6 +14,13 @@ const profiles = [
     github: "",
   },
   {
+    name: "Vansh Nagar",
+    img: "./Public/Memberspfp/7617684d-5f62-4cfe-af8d-329071caddb5.jpg",
+    linkedin: "https://www.linkedin.com/in/vansh-nagar-469648346/",
+    instagram: "https://www.instagram.com/vanshnagar1029/",
+    github: "https://github.com/vasnhNagar1223",
+  },
+  {
     name: "IMG-20250215-WA0046",
     img: "./Public/Memberspfp/IMG-20250215-WA0046.jpg",
     linkedin: "",
