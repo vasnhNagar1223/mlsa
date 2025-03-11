@@ -75,60 +75,6 @@ html {
   opacity: 0;
   z-index: 1;
 }
-.RegisterNowButton {
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 0.4rem 2rem;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 17px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-image: url("https://i.pinimg.com/originals/65/98/31/6598313112d22526d2931969c8cf57d8.gif");
-  background-position: right;
-  color: ghostwhite;
-}
-
-.RegisterNowButton span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-}
-
-.RegisterNowButton:hover span {
-  color: black;
-}
-
-.RegisterNowButton::before,
-.RegisterNowButton::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.RegisterNowButton::before {
-  content: "";
-  background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif");
-  background-position: center;
-
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-
-.RegisterNowButton:hover::before {
-  transform: translate3d(100%, 0, 0);
-}
 
 .page1 {
   height: 100%;

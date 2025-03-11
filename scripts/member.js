@@ -8,7 +8,7 @@ if (window.innerWidth > 600) {
 const profiles = [
   {
     name: "Gaurav Singh",
-    img: "./Public/Memberspfp/Gaurav Singh.jpeg",
+    img: "./Public/Memberspfp/Gaurav Singh.jpg",
     linkedin: "",
     instagram: "",
     github: "",
@@ -29,14 +29,14 @@ const profiles = [
   },
   {
     name: "Priyal Bhardwaj",
-    img: "./Public/Memberspfp/Priyal Bhardwaj.jpeg",
+    img: "./Public/Memberspfp/Priyal Bhardwaj.jpg",
     linkedin: "",
     instagram: "",
     github: "",
   },
   {
     name: "Rudraksh Goyal",
-    img: "./Public/Memberspfp/Rudraksh Goyal.jpeg",
+    img: "./Public/Memberspfp/Rudraksh Goyal.jpg",
     linkedin: "",
     instagram: "",
     github: "",

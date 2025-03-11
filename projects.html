@@ -41,17 +41,17 @@
       >
         <div class="text-white max-sm:hidden">
           <a href="index.html">
-            <img
-              src="./Public/1_fMCdGCokXoh8CECCD7j9Og.png"
-              class="w-[8vw]"
-              alt=""
+            <img src="./Public/black-MLSA.png" class="w-[20vw]" alt=""
           /></a>
         </div>
         <div
-          class="container flex justify-center items-center gap-[4vw] -mr-[3vw] max-sm:hidden"
+          class="container flex justify-center items-center gap-[4vw] max-sm:hidden"
         >
           <ul class="tabs" id="tabs">
+            <li class="tab magnet-target"><a href="index.html">Home</a></li>
+
             <li class="tab magnet-target"><a href="event.html">Events</a></li>
+
             <li class="tab magnet-target">
               <a href="projects.html">Projects</a>
             </li>
@@ -61,14 +61,21 @@
             <li class="tab magnet-target">
               <a href="gallery.html">Gallery</a>
             </li>
-            <li class="tab magnet-target"><a href="index.html">Home</a></li>
             <li class="tab magnet-target"><a href="member.html">Members</a></li>
+            <li class="tab magnet-target">
+              <a href="patners.html">Patners</a>
+            </li>
 
             <div class="cursor" id="cursor"></div>
           </ul>
         </div>
 
-        <button class="RegisterNowButton"><span>Register Now </span></button>
+        <button
+          class="bg-black py-5 px-7 rounded-lg hover:bg-white hover:text-black font-bold transition-all duration-300"
+          onclick="window.location.href='socials.html'"
+        >
+          SOCIALS
+        </button>
         <i
           onclick="handlesidebarButton()"
           class="ri-menu-line sm:hidden text-[8vw] m-[3vw]"
@@ -116,6 +123,12 @@
           href="member.html"
         >
           <div>Members</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="patners.html"
+        >
+          <div>Patners</div>
         </a>
       </div>
       <div class="content flex justify-center items-center flex-col relative">
@@ -226,17 +239,28 @@
       <div class="flex flex-col sm:flex-row justify-between gap-8 sm:gap-0">
         <div class="w-full sm:w-[25vw] text-white text-center sm:text-left">
           <div class="text-sm sm:text-base text-justify max-sm:text-center">
-            WE ENCOURAGE YOUNG MINDS TO PURSUE KNOWLEDGE AND EXCELLENCE IN
-            UNIQUE WAYS
+            A community trying to bridge the gap between academia and industry.
           </div>
           <div
-            class="mt-4 text-xl sm:text-2xl space-x-4 flex justify-center sm:justify-start"
+            class="mt-4 text-xl sm:text-2xl gap-4 flex justify-center sm:justify-start"
           >
-            <i class="ri-github-fill hover:text-gray-300 cursor-pointer"></i>
-            <i class="ri-instagram-line hover:text-gray-300 cursor-pointer"></i>
-            <i
-              class="ri-linkedin-box-fill hover:text-gray-300 cursor-pointer"
-            ></i>
+            <a href="https://github.com/mlsa-bitjaipur">
+              <i class="ri-github-fill hover:text-gray-300 cursor-pointer"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mlsa_bitjaipur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
+              <i
+                class="ri-instagram-line hover:text-gray-300 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mlsa-bit-jaipur-chapter/posts/?feedView=all"
+            >
+              <i
+                class="ri-linkedin-box-fill hover:text-gray-300 cursor-pointer"
+              ></i>
+            </a>
           </div>
         </div>
         <div
@@ -245,7 +269,10 @@
           <div class="w-full sm:w-[25vw] text-center sm:text-left">
             <div class="font-bold mb-2 text-sm sm:text-base">CONTACT US</div>
             <div class="mb-1 text-xs sm:text-sm">
-              <i class="ri-phone-fill"></i> +91 8619777940
+              <i class="ri-phone-fill"></i> +91 6377907623
+            </div>
+            <div class="mb-1 text-xs sm:text-sm">
+              <i class="ri-phone-fill"></i> +91 7417403294
             </div>
             <div class="mb-1 text-xs sm:text-sm">
               <i class="ri-phone-fill"></i> +91 8619056754
@@ -256,16 +283,16 @@
             class="w-full sm:w-[10vw] text-center sm:text-left flex flex-col"
           >
             <div class="font-bold mb-2 text-sm sm:text-base">VISIT US AT</div>
-            <div class="mb-1 text-xs sm:text-sm">BIT</div>
-            <div class="mb-1 text-xs sm:text-sm">JAIPUR</div>
-            <div class="text-xs sm:text-sm">INDIA</div>
+            <a href="https://maps.app.goo.gl/KpyTuttknJFZ4ca46">
+              Birla Institute of Technology, Jaipur - 302017, Rajasthan, India
+            </a>
           </div>
         </div>
       </div>
       <div
         class="flex justify-center sm:justify-start items-center mt-4 sm:mt-[3vw] text-neutral-500 text-xs sm:text-sm text-center sm:text-left"
       >
-        © 2025 MLSA BIT DESIGNED BY VANSH NAGAR
+        © 2025 MLSA BIT | DESIGNED BY MLSA BIT TEAM
       </div>
     </div>
 
