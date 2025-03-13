@@ -104,19 +104,12 @@ PROJECTS.forEach((element) => {
   });
 });
 
-handleCloseButtonclick = () => {
-  const button = document.querySelector(".navSideBar");
-  button.style.display = "none";
-  const sidebarButton = document.querySelector(".ri-menu-line");
-  sidebarButton.style.display = "initial";
-};
-
-handlesidebarButton = () => {
-  const button = document.querySelector(".navSideBar");
-  button.style.display = "initial";
-  const sidebarButton = document.querySelector(".ri-menu-line");
-  sidebarButton.style.display = "none";
-};
+function showOverlay() {
+  document.getElementById("socialsOverlay").style.display = "flex";
+}
+function hideOverlay() {
+  document.getElementById("socialsOverlay").style.display = "none";
+}
 
 if (window.innerWidth > 600) {
   Shery.mouseFollower({
@@ -124,3 +117,114 @@ if (window.innerWidth > 600) {
     duration: 1,
   });
 }
+
+const overlayContent = document.querySelector(".overlay-content");
+
+overlayContent.innerHTML = ` <div
+      class="overlayContent relative h-screen w-full flex max-sm:flex-wrap backdrop-blur-md"
+    >
+      <i
+        class="absolute right-5 top-3 max-sm:absolute ri-close-large-fill text-5xl cursor-pointer transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.75)]"
+        onclick="hideOverlay()"
+      ></i>
+      <!--left-->
+      <div
+        class="flex justify-between flex-col bg-white bg-opacity-15 rounded-lg w-1/3 max-sm:w-full m-[1vw] max-sm:m-[13px]"
+      >
+        <div>
+          <h1 class="m-[0.5vw] mt-2 text-[35px] font-bold">
+            Microsoft Learn Student Ambassadors
+          </h1>
+
+          <h2 class="border-b-2 mx-2 text-[15px] pb-[1vw]">
+            BIT JIPUR CHAPTER
+          </h2>
+          <div class="m-[1vw] text-2xl font-bold">About Us</div>
+          <div class="m-[1vw]">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Proin eget
+            eleifend vitae aenean curae volutpat. Rutrum vel rhoncus proin elit
+            turpis; lacinia montes feugiat. Aenean velit aptent fermentum
+            natoque ad. Fermentum vivamus consectetur et netus nunc. Quam morbi
+            eleifend non nulla metus a porttitor. Nunc litora fermentum feugiat
+            tortor eros augue elementum leo. Ultricies egestas erat duis donec
+            mattis turpis auctor. Eleifend himenaeos eros augue elementum leo.
+            Ultricies egestas erat duis donec mattis turpis auctor. Eleifend
+            himenaeos
+          </div>
+        </div>
+
+        <div class="m-[1vw]">
+          <div class="flex gap-[1vw] items-center">
+            <img
+              src="./Public/dakshpfp.jpg"
+              class="w-[50px] rounded-full object-cover"
+              alt="img"
+            />
+            <a
+              href="https://mvp.microsoft.com/en-US/studentambassadors/profile/68c11703-b4e9-4f40-a4fc-d88638eba224"
+            >
+              <div>Daksh Gupta</div>
+            </a>
+          </div>
+          <div>
+            Founding Lead, Microsoft Learn Student Ambassadors - BIT Jaipur
+            Chapter
+          </div>
+        </div>
+      </div>
+      <!--right-->
+
+      <div class="w-full overflow-hidden m-[1vw]">
+        <div class="text-3xl mb-[1vw] max-sm:text-center font-bold">
+          OUR COMMUNALS
+        </div>
+        <div
+          class="bg-white bg-opacity-15 rounded-lg p-[1vw] flex gap-[1vw] max-sm:m-[13px] justify-start items-center mb-[1vw] overflow-x-auto"
+        >
+          <a
+            href="https://github.com/mlsa-bitjaipur"
+            target="_blank"
+            class="flex items-center gap-4 bg-gray-900 py-6 px-6 rounded-lg hover:bg-black transition magnet-target"
+          >
+            <i class="ri-github-fill text-6xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/mlsa_bitjaipur"
+            target="_blank"
+            class="flex items-center gap-4 bg-gray-900 py-6 px-6 rounded-lg hover:bg-pink-500 transition magnet-target"
+          >
+            <i class="ri-instagram-line text-6xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/mlsa-bit-jaipur-chapter/posts/"
+            target="_blank"
+            class="flex items-center gap-4 bg-gray-900 py-6 px-6 rounded-lg hover:bg-blue-700 transition magnet-target"
+          >
+            <i class="ri-linkedin-box-fill text-6xl"></i>
+          </a>
+          <a
+            href="https://x.com/mlsabitjaipur"
+            target="_blank"
+            class="flex items-center gap-4 bg-gray-900 py-6 px-6 rounded-lg hover:bg-sky-500 transition magnet-target"
+          >
+            <i class="ri-twitter-fill text-6xl righ"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@mlsa_bitjaipur"
+            target="_blank"
+            class="flex items-center gap-4 bg-gray-900 py-6 px-6 rounded-lg hover:bg-red-600 transition magnet-target"
+          >
+            <i class="ri-youtube-fill text-6xl"></i>
+          </a>
+        </div>
+        <div
+          class="bg-white bg-opacity-15 rounded-lg max-sm:m-[13px] p-[2vw] overflow-y-scroll h-full"
+        >
+          <div
+            class="elfsight-app-48ffdb2f-093a-4942-bf71-2574b71e4d05"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+      </div>
+    </div>
+`;

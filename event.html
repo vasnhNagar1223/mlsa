@@ -78,7 +78,7 @@
 
         <button
           class="bg-black py-5 px-7 rounded-lg hover:bg-white hover:text-black font-bold transition-all duration-300"
-          onclick="window.location.href='socials.html'"
+          onclick="showOverlay()"
         >
           SOCIALS
         </button>
@@ -256,6 +256,9 @@
         © 2025 MLSA BIT | DESIGNED BY MLSA BIT TEAM
       </div>
     </div>
+    <div class="overlay" id="socialsOverlay">
+      <div class="overlay-content"></div>
+    </div>
 
     <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
 
@@ -276,5 +279,9 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/event.js"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
   </body>
 </html>
